@@ -1,0 +1,390 @@
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.barista-profile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #a14a3a;
+  padding: 8px 14px;
+  border-radius: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.home-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.product-footer button {
+  padding: 4px 8px;
+  font-size: 1rem;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fact-icon {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgb(247, 239, 239);
+  margin-left:120px}
+
+.fact-popup {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #fff4dc;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a14a3a;
+  padding: 1.5rem 2rem;
+  color: white;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar nav a:hover {
+  color: #f9c9bd;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Garamond', serif; 
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #a14a3a;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #ffe6e0;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  flex-wrap: wrap;
+}
+
+.icon {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+  background-color: #fef0ed;
+}
+
+/* Section common */
+.section {
+  padding: 3rem 2rem;
+  background-color: #f9c9bd;
+  text-align: center;
+  
+}
+
+.section h2 {
+  color: #a14a3a;
+  margin-bottom: 2rem;
+}
+
+/* Products */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+{{/* .product-footer button {
+  background-color: #a14a3a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+} */}}
+
+.product-footer button:hover {
+  background-color: #8e3c2e;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #fef0ed;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card h4 {
+  margin: 0.5rem 0 0.25rem;
+  color: #333;
+}
+
+.testimonial-card .role {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.testimonial-card .comment {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: #fff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.newsletter h2 {
+  color: #a14a3a;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.subscribe input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #aaa;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.subscribe button {
+  padding: 10px 16px;
+  background-color: #a14a3a;
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe button:hover {
+  background-color: #8e3c2e;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.social-footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #a14a3a;
+  padding: 10px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-icons li a:hover {
+  background-color: #c95d4e;
+  color: #fff6f2;
+}
+
+/* Order Now Button */
+.order-now-button {
+  padding: 12px 24px;
+  background-color: #a14a3a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-now-button:hover {
+  background-color: #8e3c2e;
+}
+
+/* Product Card Paragraph */
+.product-card p {
+  font-size: 0.95rem;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+/* Order Summary Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}

@@ -1,0 +1,226 @@
+/* Manage.css */
+
+.manage-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.navbar {
+  background-color: #a14a3a;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Garamond', serif;
+  color: white;
+}
+
+/* Content */
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Tables */
+.centered-table {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.centered-table th,
+.centered-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.centered-table th {
+  background-color: #ffe6e0;
+  color: #a14a3a;
+  font-weight: 600;
+}
+
+.centered-table tr:hover {
+  background-color: #fef3f1;
+}
+
+/* Add Barista Form */
+.add-form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-form input {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  margin-top: 10px;
+  background-color: #a14a3a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #872f22;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.refil-btn {
+  background-color:rgb(87, 141, 101);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.refil-btn:hover {
+  background-color:rgb(78, 156, 211);
+}
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.day-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 3px; /* tighter spacing */
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-form h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.add-form input[type="text"],
+.add-form input[type="number"],
+.add-form input[type="time"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.day-checkboxes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.day-checkboxes legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Reduced from 6px to 3px for tighter spacing */
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.checkbox-label:hover {
+  background-color: #e5e5e5;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  /* Make the checkboxes slightly smaller for better proportions */
+  width: 14px;
+  height: 14px;
+}
+
+.checkbox-label input[type="checkbox"]:checked + span {
+  font-weight: bold;
+  color:rgb(218, 173, 94);
+}

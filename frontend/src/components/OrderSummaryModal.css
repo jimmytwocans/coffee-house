@@ -1,0 +1,97 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  font-family: 'Garamond', serif;
+}
+
+.summary-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.summary-table th,
+.summary-table td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.payment-method {
+  margin: 20px 0;
+}
+
+.payment-method label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirm-btn {
+  background-color: #a14a3a;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #555;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-cancel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.yes-btn, .no-btn {
+  padding: 8px 14px;
+  margin: 0 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.yes-btn {
+  background-color: #a14a3a;
+  color: white;
+}
+
+.no-btn {
+  background-color: #777;
+  color: white;
+}
